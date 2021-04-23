@@ -2,10 +2,10 @@
 
 
 def second_smallest(a):
-    max_number = max(a)
-    second = 0
+    min_number = min(a)
+    second = max(a)
     for i in a:
-        if i > second and i != max_number:
+        if i < second and i != min_number:
             second = i
     return second
 

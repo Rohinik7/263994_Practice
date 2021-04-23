@@ -10,9 +10,18 @@ def get_type(input_data):
     if input_data=='0':
         return 'Zero(0)'
     try:
-        return type(literal_eval(input_data))
+        return (literal_eval(input_data))
     except (ValueError, SyntaxError):
         # A string, so return str
         return str
 n=input("Enter Value: ")
-print(get_type(n))
+c=get_type(n)
+if c is float:
+    print("Float number: True")
+else:
+    print("Float number: False")
+if c is not str or c is not complex:
+    print("Real number: True")
+else:
+    print("Real number: False")
+if c is str
