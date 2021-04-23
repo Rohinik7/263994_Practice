@@ -10,7 +10,7 @@ for i in range(n):
     a[key]=value
 m = int(input("Enter number of pairs in dictionary 2:  "))
 for i in range(m):
-    key,value=input("Enter the "+str(i)+" pair").split()
+    key,value=input("Enter the "+str(i+1)+" pair").split()
     b[key]=value
 c=Merge(a,b)
 print(c)
